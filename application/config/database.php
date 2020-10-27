@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'crud_cursos',
+	'hostname' => 'mysql380.umbler.com',
+	'username' => 'limmaphl',
+	'password' => 'So101190',
+	'database' => 'teste_ezoom',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
