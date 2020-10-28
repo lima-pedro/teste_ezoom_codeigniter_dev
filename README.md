@@ -1,10 +1,10 @@
 # Teste Ezoom
 ## Back-end com codeigniter
 
-Com o xampp instalado no Windows, basta clonar a aplicação na pasta htdocs e acessar via navegador. 
-Ex.:
-- diretório C:\xampp\htdocs\teste-ezoom. 
-- browser http://localhost/teste-ezoom/.
+Clonar a aplicação na pasta htdocs do xampp.
+Fazer a importação do arquivo crud_cursos.sql no phpmyadmin.
+Subir o servidor apache pela dashboard do xampp.
+Acessar via localhost/teste-ezoom.
 
 Pode ser realizado o cadastro e na home uma vizualização da lista de cursos cadastrados.
-Pode ser listado o detalhe de cada curso. OBS: Tudo em localhost.
+Pode ser listado o detalhe de cada curso.
