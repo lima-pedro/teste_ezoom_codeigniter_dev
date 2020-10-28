@@ -5,9 +5,9 @@ class Home extends CI_Controller {
   public function index() {
     $data['title'] = "Home - Listagem de cursos";
 
-    $this->load->model("cursos_model");
+    $this->load->model("Cursos_model");
 
-    $data['cursos'] = $this->cursos_model->index();
+    $data['cursos'] = $this->Cursos_model->index();
 
     $this->load->view("templates/header", $data);
     $this->load->view("templates/navbar");

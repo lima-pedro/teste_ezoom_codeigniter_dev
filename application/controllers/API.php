@@ -16,7 +16,7 @@ class API extends CI_Controller {
 
       parent::__construct();
       $this->load->helper('json_output_helper');
-      $this->load->model("cursos_model");
+      $this->load->model("Cursos_model");
        
     }
 
@@ -25,7 +25,7 @@ class API extends CI_Controller {
 
     if ($method == 'GET') {
 
-      $response = $this->cursos_model->index();
+      $response = $this->Cursos_model->index();
       json_output(200, $response);
     }
   }
@@ -36,7 +36,7 @@ class API extends CI_Controller {
     if ($method == 'POST') {
 
       $curso = json_decode(file_get_contents('php://input'), TRUE);
-      $this->cursos_model->create($curso);
+      $this->Cursos_model->create($curso);
       json_output(200, array('message' => "ok"));
     }
   }
@@ -45,7 +45,7 @@ class API extends CI_Controller {
     $method = $_SERVER['REQUEST_METHOD'];
 
     if ($method == 'GET') {
-      $curso = $this->cursos_model->show($id);
+      $curso = $this->Cursos_model->show($id);
       json_output(200, $curso);
     }
   }
@@ -56,7 +56,7 @@ class API extends CI_Controller {
     if ($method == 'PUT') {
 
       $curso = json_decode(file_get_contents('php://input'), TRUE);
-      $this->cursos_model->update($id, $curso);
+      $this->Cursos_model->update($id, $curso);
       json_output(200, array('message' => "ok"));
     }
   }
@@ -65,7 +65,7 @@ class API extends CI_Controller {
     $method = $_SERVER['REQUEST_METHOD'];
 
     if ($method == "DELETE") {
-      $this->cursos_model->delete($id);
+      $this->Cursos_model->delete($id);
       json_output(200, array('message' => "ok"));
     }
   }

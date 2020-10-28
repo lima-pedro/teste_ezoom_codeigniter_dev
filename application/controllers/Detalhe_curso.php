@@ -6,9 +6,9 @@ class Detalhe_curso extends CI_Controller {
 
     $data['title'] = "Detalhes do curso";
 
-    $this->load->model("cursos_model");
+    $this->load->model("Cursos_model");
 
-    $data['curso'] = $this->cursos_model->show($id);
+    $data['curso'] = $this->Cursos_model->show($id);
     $img_galeria_temp = substr($data['curso']['img_galeria'], 0, -1);
 
     $data['img_galeria_nome'] = explode(",",  $img_galeria_temp);

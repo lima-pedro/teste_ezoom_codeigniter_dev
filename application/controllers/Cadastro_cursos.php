@@ -37,13 +37,8 @@ class Cadastro_cursos extends CI_Controller {
 
     $curso['img_galeria'] = $galeria;
 
-    // print "<pre>";
-    // print_r($curso);
-    // print "</pre>";
-    // exit();
-
-    $this->load->model("cursos_model");
-    $this->cursos_model->create($curso);
+    $this->load->model("Cursos_model");
+    $this->Cursos_model->create($curso);
 
     redirect('home');
   }

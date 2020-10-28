@@ -1,17 +1,17 @@
-<div class="container">
+<div class="home-container container">
   <?php foreach($cursos as $curso) { ?>
-    <div class="card">
+    <div id="home-card" class="card">
 
-      <div class="card-header">
+      <div id="home-card-header" class="card-header">
         <?= $curso['titulo'] ?>
       </div>
       
-      <div class="card-body">
+      <div id="home-card-body" class="card-body">
         <img src="<?= base_url()?>public/uploads/imgs_principais/<?= $curso['img_principal']?>">
         <p><?= $curso['descricao'] ?></p>
       </div>
 
-      <div class="card-footer">
+      <div id="home-card-footer" class="card-footer">
         <a
           class="btn btn-success"
           href="<?= base_url()?>detalhe_curso/show/<?= $curso['id'] ?>">Detalhes do curso</a>
